@@ -112,6 +112,7 @@ graduates.map(students => {
     return unisWithUni.push(students.university)
   }
 })
+
 console.log(unisWithUni);
 
 
@@ -164,11 +165,9 @@ console.log(lowCaseAnimalNames);
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
  
 */
-const lowPopulationAnimals = [];
-lowPopulationAnimals
-  .push(zooAnimals.filter(
-    animals => animals.population < 5
-  ))
+const lowPopulationAnimals = zooAnimals.filter(
+  animals => animals.population < 5
+)
 console.log(lowPopulationAnimals);
 
 
